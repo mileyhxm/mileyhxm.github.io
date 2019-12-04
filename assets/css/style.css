@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+	font-family: 'ZCOOL Xiaowei', serif;
+	color: #333333;
+	font-size: 32px;
+}
+
+h3 {
+	font-family: 'ZCOOL Xiaowei', serif;
+	color: #333333;
+	font-size: 24px;
+}
+
+.container {
+	position: relative;
+  	text-align: left;
+  	margin-top: 100px;
+  	margin-left: 100px;
+}
+
+#logo {
+	position: fixed;
+	top: 40px;
+	left: 100px;
+}
+
+.site-nav {
+	position: fixed;
+	top: 40px;
+	right: 200px;
+}
+
+.nav-li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-item{
+	position: relative;
+	margin-left: 100px;
+	align-items: center;
+}
+
+.nav-item img {
+	position: absolute;
+	top:0px;
+}
+
+
+.nav-item a{
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #333333;
+	text-decoration: none;
+	position:absolute;
+	top:0px;
+}
+
+.light a{
+	color: #FFFFFF;
+}
+
+.bg-image {
+	position: relative;
+	top: 0px;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bg-image img {
+	width:100%;
+}
+
+/*typing effect */
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to { opacity: .0; }
+}
+
+.flex {
+	display: flex;
+	position: relative;
+}
+
+.header-sub-title {
+  	color: #333333;
+  	font-size: 60px;
+  	padding: 0.1em;
+  	position: relative;
+  	left: 30%;
+}
+
+.header-sub-title #id {
+	transform: translateX(-50%);
+}
+
+
+#pic1{
+	margin-top: 100px;
+	margin-left: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+#pic2{
+	margin-top: 200px;
+	margin-right: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+#pic3{
+	margin-top: 200px;
+	margin-left: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+#pic4{
+	margin-top: 200px;
+	margin-right: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+.textbox-right {
+	margin-right: 
+}
+
+#pictures {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+    height:500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#header {
+	position: absolute;
+	top: 140px;
+	left: 30%;
+}
+
+#text-description {
+	position: relative;
+	margin-top: 10px;
+	width: 600px;
+	font-family: 'Public Sans', sans-serif;
+}
+
+.hide {
+	display: none;
+}
+
+.grid:hover .name {
+	margin-top: 20px;
+	display: block;
+}
+
+.grid:hover .text {
+	margin-top: 20px;
+	display: block;
+}
+
+.grid {
+	width: 200px;
+	margin: 20 20px;
+}
+
+.grid img {
+	opacity: .8;
+    width: 200px;
+    height: 150px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.text {
+	width:200px;
+	padding: 10 10px;
+}
+
+
+.grid img:hover {
+    cursor: pointer;
+    opacity: 1;
+    width:220px;
+    height:165px;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+}
+
+#carousel {
+	position: relative;
+	margin-top: 100px;
+	margin-left: 200px;
+	margin-bottom: 100px;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+#carousel,
+.carousel-image {
+  width: 600px;
+  height: 450px;
+}
+
+/* Carousel */
+
+#carousel-image-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+  transition: 0.5s all;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+
+#carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#button-next,
+#button-previous {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Caption */
+#caption {
+	position: relative;
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 400px;
+	font-size: 24px;
+	color: #333333;
+}
+
+#description {
+	position: relative;
+	margin-top: 40px;
+	margin-left: 100px;
+	width: 400px;
+	color: #333333;
+	font-family: 'Public Sans', sans-serif;
+}
